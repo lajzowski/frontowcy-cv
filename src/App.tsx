@@ -1,5 +1,9 @@
 import { CvData } from './types/cvData.interface.ts';
-import './App.scss'
+import { PersonalPhoto } from './components/PersonalPhoto.tsx';
+import { Experience } from './components/Experience.tsx';
+import './Global.scss'
+import { Education } from './components/Education.tsx';
+import { Footer } from './components/Footer.tsx';
 
 
 export const App = () => {
@@ -30,31 +34,19 @@ export const App = () => {
       </header>
       <aside className={'personal'}>
         <h2>Personal data</h2>
-        <img className={'cv-photo'} src={cvData.photo} alt={'Example photo of a woman'}/>
+        <PersonalPhoto alt={'Example photo of a woman'} src={cvData.photo}/>
         <p className={'name'}>{cvData.name} {cvData.lastName}</p>
         <small>{cvData.position}</small>
       </aside>
       <section className={'details'}>
         <h2>Experience</h2>
-        <ul>
-          {
-            cvData.experience
-              .sort((a,b) => b.year - a.year)
-              .map((experience,_x) => <li key={_x}>
-              <strong>{experience.year}</strong> - {experience.description}
-             </li>)
-          }
-        </ul>
+        <Experience experience={cvData.experience}/>
         <h2>Education</h2>
-        <ul>
-          {
-            cvData.education.map((education,_x) => <li key={_x}>{education}</li>)
-          }
-        </ul>
+        <Education education={cvData.education} />
       </section>
+      <Footer/>
     </main>
   );
-
 
 
 }

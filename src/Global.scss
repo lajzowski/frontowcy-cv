@@ -39,15 +39,32 @@ h2 {
     letter-spacing: $letter-spacing;
 }
 
+body {
+
+    background-color: rgb(65, 110, 110, 0.8);
+    background-image: repeating-linear-gradient(
+                    135deg,
+                    rgba(255, 255, 255, 0.05),
+                    rgba(255, 255, 255, 0.05) 15px,
+                    transparent 15px,
+                    transparent 30px
+    );
+}
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
     width: 100%;
     display: grid;
 
-    grid-template-areas: "header header" "personal details";
+    grid-template-areas: "header header" "personal details" "personal footer";
     grid-template-columns: 250px 1fr;
+    grid-template-rows: 80px 1fr 100px;
+    background-color: #416e6e;
 
+    color: #e6f2f2; // Jasny odcień pasujący do tła (#416e6e) dla dobrej czytelności
+    align-items: start;
+    min-height: 100vh;
 }
 
 header {
@@ -64,11 +81,19 @@ header {
     }
 }
 
+footer {
+   grid-area: footer;
+    text-align: center;
+    font-size: 12px;
+    padding: 50px;
+
+}
+
 .personal {
     grid-area: personal;
     padding: 20px;
-    background-color: #416e6e;
     height: 100%;
+    border-right: whitesmoke 1px solid;
 
     .cv-photo {
         max-width: 100%;

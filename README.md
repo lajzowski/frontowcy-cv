@@ -2,9 +2,8 @@
 
 ## Opis projektu
 
-Ten projekt to bardzo prosty przykładowy CV przygotowany na potrzeby kursu Frontowcy. Umożliwia zapoznanie się z
-podstawami tworzenia
-i stylizowania stron internetowych przy użyciu React i Vite.
+Ten projekt to bardzo proste przykładowe CV.
+Projekt został przygotowany na potrzeby kursu Frontowcy.
 
 ## Technologie
 
@@ -12,8 +11,8 @@ Projekt wykorzystuje następujące technologie:
 
 - React
 - Vite
-- CSS3
-- JavaScript
+- SCSS
+- TypeScript
 
 ## Jak uruchomić projekt?
 
@@ -29,7 +28,7 @@ Projekt wykorzystuje następujące technologie:
    ```bash
    npm run dev
    ```
-
-## Autorzy
-
-Projekt został stworzony na potrzeby kursu Frontowcy.
+   
+## Informacje dodatkowe
+CV zostało wykonane wyłącznie na potrzeby kursu "Frontowy" jako projekt edukacyjny.
+Nie odzwierciedla poziomu moich umiejętności programistycznych i ze względu na uproszczoną formę nie nadaje się do użytku.
