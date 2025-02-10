@@ -1,0 +1,104 @@
+$letter-spacing: 3px;
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+
+    html, body {
+        height: 100%;
+        font-size: 100%;
+    }
+
+    ul, ol {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    button {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin: 25px 0;
+    letter-spacing: $letter-spacing;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+
+    grid-template-areas: "header header" "personal details";
+    grid-template-columns: 250px 1fr;
+
+}
+
+header {
+    width: 100%;
+    grid-area: header;
+    padding: 20px;
+    text-align: center;
+}
+
+.details {
+    margin: 20px;
+    li {
+        line-height: 32px;
+    }
+}
+
+.personal {
+    grid-area: personal;
+    padding: 20px;
+    background-color: #416e6e;
+    height: 100%;
+
+    .cv-photo {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        width: 100%;
+    }
+
+    .name {
+        margin-left: 10px;
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: 1.3rem;
+        letter-spacing: $letter-spacing;
+
+    }
+    small {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+
+p {
+    line-height: 20px;
+}
+
+
+
+img {
+    border-radius: 6px;
+}
+
