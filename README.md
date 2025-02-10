@@ -30,5 +30,5 @@ Projekt wykorzystuje następujące technologie:
    ```
    
 ## Informacje dodatkowe
-CV zostało wykonane wyłącznie na potrzeby kursu "Frontowy" jako projekt edukacyjny.
+CV zostało wykonane wyłącznie na potrzeby kursu "Frontowcy" jako projekt edukacyjny.
 Nie odzwierciedla poziomu moich umiejętności programistycznych i ze względu na uproszczoną formę nie nadaje się do użytku.
